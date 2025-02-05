@@ -47,6 +47,35 @@ public class OperatorExample {
         System.out.println("Cart no after adding : "+ cart_no);
         //it will work similar with other assignment operator
                 
+        /**
+         * 3. Compairative Operator
+         * ==,!=,<,>,<=,>=
+         */
         
+        String username="dav";
+        String password="1234";
+        int roll_no = 12;
+        System.out.println("Equal to:" + username=="dav");
+        System.out.println("not wquals toL: "+password !="1234");
+        System.out.println("Greater than: "+(roll_no>10));
+        System.out.println("lesser than: "+(roll_no<10));
+        System.out.println("lesser than equals: "+(roll_no<=10));
+        System.out.println("greater than equals: "+(roll_no>=10));
+        
+        /**
+         * 4. logical operator
+         * && -> AND - all condition must return true
+         * || -> OR - if any of the condition is true then returns true
+         */
+        boolean result_AND = roll_no>=12 && roll_no <= 12;
+        System.out.println("Logical AND: "+result_AND);
+        boolean result_OR = roll_no>=12 && roll_no <= 13;
+        System.out.println("Logical AND: "+result_OR);
+        /**
+         * 5. Ternary operator 
+         * syntax: condition ? "true":"false"
+         */
+        double sum = 23+12;
+        System.out.println("Result: " +(sum==35?"correct":"Wrong"));
     }
 }
