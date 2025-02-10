@@ -1,0 +1,34 @@
+Do Not Delete. Important school learnings
+
+# Specific directories to ignore in Java project labs
+
+# Lab One
+JAVA/LabOne/build/
+JAVA/LabOne/nbproject/private/
+
+# Lab Two - Datatype and Operator
+JAVA/LabTwoDatatypeAndOperator/build/
+JAVA/LabTwoDatatypeAndOperator/nbproject/private/
+
+# Lab Three - Conditional Statements
+JAVA/LabThreeConditionalStatetment/build/
+JAVA/LabThreeConditionalStatetment/nbproject/private/
+
+# NetBeans specific files and directories
+*/nbproject/
+*/nbbuild/
+*/dist/
+*/nbdist/
+*/nbactions.xml
+*/nb-configuration.xml
+
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Unnecessary resources to ignore
+resources/**

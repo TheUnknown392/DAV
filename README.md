@@ -1,3 +1,5 @@
+# Repository Overview
 
-# About Repo:-
-will put everything here while learning everything from college.
+This repository will store various materials and projects related to my college learning. It includes code, notes, and resources from my lab work.
+
+it may rarely contain my normal assignment.
