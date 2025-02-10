@@ -11,7 +11,11 @@ package main;
 public class ConditonalStatetmentExample {
 
     /**
-     * if statement 1.if 2. if else 3. if else if 4. nested if syntax:
+     * if statement 
+     * 1.if 
+     * 2. if else 
+     * 3. if else if 
+     * 4. nested if syntax:
      * if(condition){ block of code } note: the condition must be true in order
      * to run the code inside if block
      *
@@ -72,8 +76,10 @@ public class ConditonalStatetmentExample {
         /**
          * Note: no need to compare boolean value in case of if statement
          * simply we can pas the variable in that carry boolean data in if
-         * statement eg: boolean attendance = true; here we can do:
-         * if(attendance == true){} this same concept works with boolean false
+         * statement eg: boolean attendance = true; 
+         * here we can do:
+         * if(attendance == true){} 
+         * this same concept works with boolean false
          * value therefore in the below example status is true since it is a
          * boolean type so if(status == true) is equvalent to if(status)
          */
