@@ -15,7 +15,7 @@ JAVA/LabThreeConditionalStatetment/build/
 JAVA/LabThreeConditionalStatetment/nbproject/private/
 
 # NetBeans specific files and directories
-*/nbproject/
+*/nbproject/**
 */nbbuild/
 */dist/
 */nbdist/
@@ -32,3 +32,4 @@ JAVA/LabThreeConditionalStatetment/nbproject/private/
 
 # Unnecessary resources to ignore
 resources/**
+*.pdf
