@@ -31,5 +31,6 @@ JAVA/LabThreeConditionalStatetment/nbproject/private/
 *.ear
 
 # Unnecessary resources to ignore
-resources/**
+**/resources/**
 *.pdf
+*.docx
