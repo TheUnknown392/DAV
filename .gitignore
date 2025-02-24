@@ -15,7 +15,7 @@ JAVA/LabThreeConditionalStatetment/build/
 JAVA/LabThreeConditionalStatetment/nbproject/private/
 
 # NetBeans specific files and directories
-*/nbproject/**
+**/nbproject/**
 */nbbuild/
 */dist/
 */nbdist/
@@ -34,3 +34,5 @@ JAVA/LabThreeConditionalStatetment/nbproject/private/
 **/resources/**
 *.pdf
 *.docx
+/JAVA/LabFourMethod/nbproject/private/
+/JAVA/LabFourMethod/build/
