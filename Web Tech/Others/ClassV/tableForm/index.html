@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .title{
+            background-color: lavender;
+        }
+        .title:active{
+            
+        }
+    </style>
+    <title>Table Form</title>
+</head>
+<body>
+    <h1>Table Form</h1>
+    <form action="">
+        <table border="1" cellpadding="1">
+            <tr>
+                <th class="title">Name</th>
+                <th class="title">Value</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input type="text"required>
+                </td>
+            </tr>
+            <tr>                
+                <td>Sex</td>
+                <td>
+                    <input type="radio" name="Sex" value="Male" required> Male <br>
+                    <input type="radio" name="Sex" value="Female" required> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Eye color</td>
+                <td>
+                    <select>
+                        <option>brown</option>
+                        <option>blue</option>
+                        <option>white</option>
+                        <option selected>green</option>
+                        <option>others</option>
+                    </select> 
+                </td>
+            </tr>
+            <tr>
+                <td>Cheak all that apply</td>
+                <td>
+                    <input type="checkbox">Over 6 feet tall <br>
+                    <input type="checkbox">Over 200 pound
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Describe your athletic ability: <br>
+                    <textarea cols="40" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <center>
+                        <button type="submit">Enter my information</button>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
