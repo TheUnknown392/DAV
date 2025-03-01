@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <h1>form</h1>
+    <form>
+        <fieldset>
+            <legend>Registration</legend>
+            <fieldset>
+                <legend>Personal info</legend>
+                <label for="firstName">Firstname</label>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                <label for="lastName">Lastname</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                <label for="Age">Age</label>
+                <input type="number" name="Age" id="Age" placeholder="15-20" min="15" max="20">
+                <br>
+                <label for="Email">Email</label>
+                <input type="email" name="Email" id="Email" placeholder="pss.edu@hi.np">
+                <label for="Phone">Phone</label>
+                <select name="Phone" id="Phone">
+                    <option value="+977">+977</option>
+                    <option value="+1">+1</option>
+                </select>
+                <input type="number" name="" id="Phone" maxlength="10" placeholder="0123456789" min="9000000000" max="9999999999">
+                <label for="Address">Address:</label>
+                <select name="Address" id="Address">
+                    <option value="Kathmandu">KTM</option>
+                    <option value="Lalitpur">LTP</option>
+                    <option value="Janakpur">JNP</option>
+                </select>
+                <label for="Gender">Gender: </label>
+                <input type="radio" name="Gender" id="Male">
+                <label for="Male">Male</label>
+                <input type="radio" name="Gender" id="Female">
+                <label for="Female">Female</label>
+                <input type="radio" name="Gender" id="Others">
+                <label for="Others">Others</label>
+            </fieldset>
+            <fieldset>
+                <legend>Credential</legend>
+                <label for="Username">Username</label>
+                <input type="text" name="Username" id="Username">
+                <br>
+                <label for="Password">Password</label>
+                <input type="Password" name="Password" id="Password">
+            </fieldset>
+            <fieldset>
+                <legend>intrest</legend>
+                <label for="Hobby">Hobby:</label>
+                <input type="checkbox" name="Hobby" id="Cricket">
+                <label for="Cricket">Cricket</label>
+                <input type="checkbox" name="Hobby" id="Music">
+                <label for="Music">Music</label>
+                <input type="checkbox" name="Hobby" id="Football">
+                <label for="Football">Football</label>
+                <br>
+                <label for="Faculty">Faculty:</label>
+                <input type="checkbox" name="Faculty" id="IT">
+                <label for="IT">IT</label>
+                <input type="checkbox" name="Faculty" id="BCA">
+                <label for="BCA">BCA</label>
+                <input type="checkbox" name="Faculty" id="Engineering">
+                <label for="Engineering">Engineering</label>
+            </fieldset>
+            <br>
+            <label for="University">University</label>
+            <input type="text" name="University" id="University" value="Pokhara University" readonly>
+            <br>
+            <label for="Photo">Photo:</label>
+            <input type="file" name="Photo" id="Photo" accept="image/*">
+            <br>
+            <label for="Document">Document</label>
+            <input type="File" name="Document" id="Document">
+            <br>
+            <label for="Message">Message:</label>
+            <textarea name="Message" id="Message" cols="30" rows="10">Type your message here</textarea>
+            <br>
+            <button type="submit">submit</button>
+            <button type="reset">clear</button>
+            <button type="submit">ok</button>
+        </fieldset>
+    </form>
+</body>
+</html>
