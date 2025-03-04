@@ -26,6 +26,9 @@ JAVA/LabThreeConditionalStatetment/nbproject/private/
 /JAVA/LabFiveClassObjectConstructor/build/
 /JAVA/LabFiveClassObjectConstructor/nbproject/build
 
+# Lab Six - Overloading
+/JAVA/LabSixOverloading/build/
+
 # NetBeans specific files and directories
 **/nbproject/**
 */nbbuild/
