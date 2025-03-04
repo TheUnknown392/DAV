@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* this is internal */
+        p{
+            font-weight: 250;
+            color: green;
+        }
+        .internal {
+            background-color: blue;
+            color: rgb(196, 152, 236);
+            display: inline;
+        }
+        #id{
+            background-color: lightblue;
+        }
+        #idPara{
+            color: khaki;
+            background-color: blanchedalmond;
+        }
+        .paragraph{
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Types of css</h1>
+
+    <p id="idPara">Only this using id</p>
+    <p class="paragraph">Only this using class</p>
+
+    <h3 style="background-color: aqua; color: red;">inline css</h3>
+    <p>You can input css directly to the opening tags in html through attribute style.</p>
+
+    <h3 class="internal">internal css</h3>
+    <h3 class="internal">This is using internal css</h3>
+    <p>You can put css inside style tag in head section ofa html</p>
+
+    <h3>external css</h3>
+    <p>You can create a different css file in some location then link it in head section of html by using link tag,
+        rel=stylesheet attribute and href to your file location</p>
+    <p id="id">hehehehe</p>
+</body>
+
+</html>

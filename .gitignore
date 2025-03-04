@@ -1,5 +1,8 @@
 Do Not Delete. Important school learnings
 
+# VS code
+.vscode
+
 # Specific directories to ignore in Java project labs
 
 # Lab One
@@ -13,6 +16,15 @@ JAVA/LabTwoDatatypeAndOperator/nbproject/private/
 # Lab Three - Conditional Statements
 JAVA/LabThreeConditionalStatetment/build/
 JAVA/LabThreeConditionalStatetment/nbproject/private/
+
+
+# Lab Four - Method
+/JAVA/LabFourMethod/nbproject/private/
+/JAVA/LabFourMethod/build/
+
+# Lab Five - Objects
+/JAVA/LabFiveClassObjectConstructor/build/
+/JAVA/LabFiveClassObjectConstructor/nbproject/build
 
 # NetBeans specific files and directories
 **/nbproject/**
@@ -30,11 +42,13 @@ JAVA/LabThreeConditionalStatetment/nbproject/private/
 *.war
 *.ear
 
+# C programming specific
+*o
+*exe
+Makefile
+
 # Unnecessary resources to ignore
 **/resources/**
 *.pdf
 *.docx
-/JAVA/LabFourMethod/nbproject/private/
-/JAVA/LabFourMethod/build/
 **learn**
-/JAVA/LabFuveClassObjectConstructor/build/

@@ -18,7 +18,7 @@ int main(){
 	top=-1;
 	printf("Enter the size of stack. (n<=100): ");
 	scanf("%d",&n);
-	printf("1 for push\n 2 for pop\n 3 for peek\n4 for displaying\n5 to quit");
+	printf("1 for push\n2 for pop\n3 for peek\n4 for displaying\n5 to quit");
 	while(1){
 		printf("\nEnter your choice: ");
 		scanf("%d",&choice);
@@ -44,13 +44,14 @@ int main(){
 	return 0;
 }
 void push(){
-	if(top==100-1){
+	if(top==n-1){
 		printf("Stack Overflow");
+	}else{
+		printf("\nEnter your number: ");
+		scanf("%d",&x);
+		top++;
+		stack[top]=x;
 	}
-	printf("\nEnter your number: ");
-	scanf("%d",&x);
-	top++;
-	stack[top]=x;
 }
 
 void pop(){
@@ -75,5 +76,8 @@ void display(){
 }
 
 void peek(){
+	if(top==-1){
+		printf("stack is empty");
+	}
 	printf("\nTop of the stack is: %d",stack[top]);
 }
