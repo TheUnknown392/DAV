@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psudoclass</title>
+</head>
+<style>
+    .disp>p{
+        color: blue;
+        display: block;
+    }
+    .disp>p:hover +  .disp>img{
+        display: none;
+    }
+</style>
+<body>
+    <h1>PsudoClasses</h1>
+    <div class="disp">
+        <p>Hello!</p>
+        <img height="100px" src="/resources/png/jerry.png" alt="jerry">
+    </div>
+</body>
+</html>

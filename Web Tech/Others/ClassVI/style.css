@@ -2,4 +2,12 @@ h3{
     /* This is exernal CSS */
     background-color: aquamarine;
     color: chocolate;
+
+} 
+.divv{
+        background-color: aquamarine;
 }
+.priority {
+    background-color: powderblue;
+}
+
