@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link with class</title>
+    <style>
+        .abc:link{
+            color: rgb(23, 138, 42);
+        }
+        .abc:visited{
+            color: rgb(37, 133, 241);
+        }
+        .abc:hover{
+            color:rgb(127, 25, 153);
+        }
+        .abc:active{
+            color: chocolate;
+        }
+        .name:target{
+            background-color: aqua;
+        }
+        .home:target{
+            background-color: bisque;
+        }
+        input#Password:focus{
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="#hi" class="abc">This is link one</a><br>
+    <hr>
+    <a href="#name" class="name">name</a>
+    <br>
+    <a href="#home" class="home">home</a>
+
+    <h1 href="name">Name</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 href="home">Home</h1>
+    <hr>
+    <form action="">
+        <label for="Name">Name</label>
+        <input type="text" id="Name"><br>
+        <label for="Email">Email</label>
+        <input type="email" id="Email"><br>
+        <label for="Password">Password</label>
+        <input type="password" id="Password" required><br>
+        <input type="submit" name="" id="">
+    </form>
+</body>
+</html>
