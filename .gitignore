@@ -58,3 +58,5 @@ Makefile
 *.pdf
 *.docx
 **learn**
+/JAVA/LabSevenAbstract/build/
+/JAVA/Other/LabExerciseIIAbstract/build/
