@@ -1,0 +1,42 @@
+*{
+    background-color: rgb(182, 175, 175);
+}
+.image{
+    display:flex;
+    aspect-ratio: 5/2;
+    gap:0.2em;
+    justify-content: center;
+
+}
+.item{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 1;  
+    border-radius: 12px;
+    transition: 300ms;
+}
+.item:hover{
+    flex: 2;
+}
+.i1{
+    background-image: url(/resources//jpg/burger.jpg);
+}
+.i2{
+    background-image: url(/resources/jpg/electronics.jpg);
+}
+.i3{
+    background-image: url(/resources/png/lilulu.png);
+}
+.i4{
+    background-image: url(/resources/png/nobita.png);
+}
+.i4{
+    background-image: url(/resources/png/bonclay.png);
+}
+.i5{
+    background-image: url(/resources/jpg/hrithik.jpg);
+}
+.i6{
+    background-image: url(/resources/jpg/pic.jpg);
+}

@@ -1,0 +1,40 @@
+*{
+    color: rgb(53, 50, 236);
+    font-weight: bolder;
+}
+
+.container{
+    height: 100vh;
+    border: 2px solid black;
+    /* Starting of flexbox here */
+    display: flex;
+    gap: 1em;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.common{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+.f1{
+    background-color: aquamarine;
+    flex-shrink: 0;
+}
+.f2{
+    background-color: green;
+}
+.f3{
+    background-color: palegreen;
+}
+.f4{
+    background-color: greenyellow;
+}
+.f5{
+    background-color: goldenrod;
+
+}
+.f6{
+    background-color: rgb(194, 143, 13);
+    flex-shrink: 0;
+}
