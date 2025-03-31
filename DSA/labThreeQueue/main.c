@@ -10,12 +10,12 @@ void enqueue(){
         printf("\nqueue overflow\n");
     }else{
         printf("Input the enqued data: ");
-        scanf("%d",&input); // 2
+        scanf("%d",&input);
         if(front==-1){
             front=0;
         }
         rear=rear+1;
-        queue[rear]=input; 
+        queue[rear]=input;
     }
 }
 void dequeue(){
