@@ -17,7 +17,6 @@ JAVA/LabTwoDatatypeAndOperator/nbproject/private/
 JAVA/LabThreeConditionalStatetment/build/
 JAVA/LabThreeConditionalStatetment/nbproject/private/
 
-
 # Lab Four - Method
 /JAVA/LabFourMethod/nbproject/private/
 /JAVA/LabFourMethod/build/
@@ -29,8 +28,15 @@ JAVA/LabThreeConditionalStatetment/nbproject/private/
 # Lab Six - Overloading
 /JAVA/LabSixOverloading/build/
 
+# Lab Seven - Abstract
+/JAVA/LabSevenAbstract/build/
+
+# Lab Eight - Interface
+/JAVA/LabEightInterface/build/
+
 # Lab Exercises
 /JAVA/Other/LabExercise/build/
+/JAVA/Other/LabExerciseIIAbstract/build/
 
 # NetBeans specific files and directories
 **/nbproject/**
@@ -58,5 +64,3 @@ Makefile
 *.pdf
 *.docx
 **learn**
-/JAVA/LabSevenAbstract/build/
-/JAVA/Other/LabExerciseIIAbstract/build/
