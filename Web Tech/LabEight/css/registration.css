@@ -1,0 +1,42 @@
+nav{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: aquamarine;
+    padding: 10px;
+    border-bottom: 2px aqua solid;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
+a:active{
+    color:white;
+    background-color: black;
+    border:none;
+}
+body{
+    background-color:blueviolet;
+}
+.form{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+form{
+    background-color: rgb(123, 33, 207);
+    padding: 10px;
+    border-radius: 5px;
+}
+*{
+    color:rgb(207, 177, 140);
+}
