@@ -1,0 +1,42 @@
+header,nav,.left,.center,.right,footer{
+    background-color: bisque;
+    border-radius: 5px;
+}
+
+/* margin */
+nav,header{
+    height:2.5rem;
+    align-content: center;
+    margin-bottom: .5rem;
+}
+
+footer{
+    height:2.5rem;
+    align-content: center;
+    margin-top: .5rem;
+}
+/* flex stuff */
+.main{
+    display:flex;
+    height: 79vh;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+/* text alingments */
+.left,.right,.center{
+    align-content: center;
+    text-align: center;
+}
+nav>p,header>p,footer>p{
+    text-align: center;
+}
+
+/* widths */
+.left,.right{
+    width:25%
+}
+.center{
+    width:49%;
+    flex-shrink: 1; 
+}
