@@ -1,0 +1,36 @@
+*{
+    font-family: monospace;
+}
+h1{
+    margin-top: 10%;
+    color:purple;
+    font-size: 40px;
+}
+a{
+    color:black;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 20px;
+    display:inline;
+}
+a:hover{
+    color: blue;
+}
+a:active{
+    opacity: 0.7;
+}
+h1:hover{
+    font-weight: bolder;
+}
+body{
+    background-image: url(/resources/jpg/hill.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+nav,h1{
+    margin-left: 35%;
+}
+span{
+    display: block;
+    margin-bottom: 20px;
+}
