@@ -1,0 +1,10 @@
+.loginForm{
+    margin-top: 20vh;
+    margin-left:40vw;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+}
+button{
+    margin-top:10px;
+}

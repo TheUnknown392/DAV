@@ -1,14 +1,56 @@
+body{
+    background-color: gainsboro;
+}
 .main{
+    margin-top: 5vh;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content:space-around;
     align-content: center;
+} 
+.left{
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    background-color: bisque;
+    padding: 5px;
+    margin-right: 5px;
+    flex-grow: 3;
 }
 .right{
+    /* border: 2px solid red; */
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    padding: 5px;
+    flex-grow: 1;
+}
+.pfp>img{
+    height: 20vh;
+    border-radius: 100%;
+}
+.pfp{
+    padding-top: 3%;
+    text-align: center;
+}
+.summary{
+    height: 26.5vh;
     align-content: center;
 }
+
+div:has(>h3)::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: black;
+    margin-top: 10px;
+  
+}
+.right ul::after, .right ol::after{
+    content: "";
+    display:block;
+    padding-bottom: 10px;
+}  

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Log-in</title>
+</head>
+<body>
+    <h3>Log in to your account: </h3>
+    <hr>
+    <div class="loginForm">
+        <form>
+            <label for="name">Name:</label> <br>
+            <input required type="text" name="name" id="name"><br>
+
+            <label for="contact">Phone: </label><br>
+            <input type="number" name="phone" id="phone" min="9000000000" max="9999999999"><br>
+
+            <label for="email">Email:</label><br>
+            <input required type="email" name="email" id="email"><br>
+
+            <label for="address">Address:</label><br>
+            <textarea name="Address" id="address"></textarea><br>
+
+            <label for="password">Password:</label><br>
+            <input required type="password" name="password" id="password"><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
