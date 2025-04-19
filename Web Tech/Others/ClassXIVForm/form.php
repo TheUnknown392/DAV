@@ -44,13 +44,11 @@
         <input required type="submit" name="submit" id="">
     </form>
     <?php
-        if(isset($_POST['submit'])){
+        if(isset($_POST['submit'])&&isset($_POST['Food'])){
             $name=$_POST['name'];
             $email=$_POST['email'];
             $phone=$_POST['phone'];
-            if(isset($_POST['Food'])){
-                $food=$_POST['Food'];
-            }
+            $food=$_POST['Food'];
             $address=$_POST['address'];
             $photo=$_FILES['picture']['name'];
             $temp=$_FILES['picture']['tmp_name'];
