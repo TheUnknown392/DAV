@@ -52,7 +52,8 @@
     </form>
     <?php
         if(isset($_POST['submit'])){
-            echo "Your name is: ".$_POST['name'];
+            $name=$_POST['name'];
+            echo "Your name is: $name";
         }
     ?>
 </body>
