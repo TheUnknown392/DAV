@@ -65,24 +65,18 @@ void enqueue(){
 }
 void display(){
     printf("\n");
-    if(front==-1&&rear==-1){
-        printf("empty");
-        return;
-    }
-    int front_pos=front,rear_pos=rear;
-    if(rear_pos<front_pos){
-        for(int i=front_pos; i!=n+1;i++){
-            printf("%d ",cqueue[i]);
+        if(front == -1){
+            printf("Queue is empty\n");
+            return;
         }
-        for(int i=0; i!=rear_pos+1;i++){
-            printf("%d ",cqueue[i]);
+        printf("Queue elements: ");
+        int i = front;
+        while(1){
+            printf("%d ", cqueue[i]);
+            if(i==rear){
+                break;
+            }
+            i=(i+1)%n;
         }
-    }else if(rear_pos==front_pos){
-        printf("%d ",cqueue[front]);
-    }else{
-        for(int i=front_pos; i!=rear_pos+1;i++){
-            printf("%d ",cqueue[i]);
-        }
-    }
-    printf("\n");
+        printf("\n");
 }
