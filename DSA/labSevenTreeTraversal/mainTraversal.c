@@ -50,7 +50,6 @@ int main(){
     start->left->right=newNode(5);
     start->right->left=newNode(6);
     start->right->right=newNode(7);
-    
     printf("Inorder Traversal of binary tree is: \n");
     printInorder(start);
     printf("\nPreorder Traversal of binary tree is: \n");
