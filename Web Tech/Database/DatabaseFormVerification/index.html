@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Verification</title>
+    <style>
+        span{
+            margin: 0;
+            padding: 0;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post">
+        name: <br>
+        <input  type="text" name="Name" id=""><span>*</span> <br>
+        email: <br>
+        <input  type="Email" name="Email" id=""><span>*</span> <br>
+        website: <br>
+        <input  type="url" name="Website" id=""><span>*</span> <br> <br>
+        <textarea name="Comment" id="" cols="20" rows="5" placeholder="Comment"></textarea> <span>*</span> <br>
+        gender:<span>*</span> <br>
+        male
+        <input  type="radio" name="Gender" id="" value="Male">
+        female
+        <input  type="radio" name="Gender" id="" value="Female"> <br> <br>
+        <input  type="submit" value="Submit" name="Submit">
+    </form>
+    <?php
+    $Nameerr=$Emailerr=$Websiteerr=$Gendererr="";
+   if($_SERVER['REQUEST_METHOD']=='POST')
+   {
+    //name
+    $Name = $_POST['Name'];
+    if(empty($Name))
+    {
+        $Nameerr="Name cant be empty";
+    }
+    else{
+        $Name=test_input($_POST['Name']);
+        if(!preg_match('/^[A-Za-z]+$/',$Name))
+        {
+            $Nameerr="Name should only contain letters";
+
+        }
+        else{
+            $Nameerr="Name is valid";
+        }}
+
+
+        //Email
+        $Email = $_POST['Email'];
+    if(empty($Email))
+    {
+        $Emailerr="Name cant be empty";
+    }
+    else{
+        $Email=test_input($_POST['Email']);
+        if(!preg_match('^[\w.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$',$Email))
+        {
+            $Emailerr="Invalid email";
+
+        }
+        else{
+            $Emailerr="Email is valid";
+        }}
+
+
+        //Website
+
+        $Website = $_POST['Website'];
+    if(empty($Website))
+    {
+        $Websiteerr="Website cant be empty";
+    }
+    else{
+        $Website=test_input($_POST['Website']);
+        if(!preg_match('^(https?:(\/\/|\\\\)?)?([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(:\d{1,5})?(\/[^\s]*)?$',$Website))
+        {
+            $Websiteerr="Invalid Website";
+
+        }
+        else{
+            $Websiteerr="Website is valid";
+        }}
+
+        //gender
+
+        
+        $Gender = $_POST['Gender'];
+    if(empty($Gender))
+    {
+        $Genderer="Gender cant be empty";
+    }
+    else{
+        $Gender=test_input($_POST['Gender']);
+    }
+   
+   }
+
+   function test_input($data) {
+    $data = trim($data);               // Remove whitespace from beginning and end
+    $data = stripslashes($data);       // Remove backslashes
+    $data = htmlspecialchars($data);   // Convert special characters to HTML entities
+    return $data;
+}
+
+?>
+</body>
+</html>
