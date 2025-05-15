@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        input{
+            border-color: grey;
+            border-radius: 5px;
+            border-width: 1px;
+        }
+        td:has(label){
+            text-align: right;
+        }
+        td:has(input){
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <form action="" enctype="multipart/form-data">
+        <table cellpadding="10">
+            <tr>
+                <td>
+                    <label for="Username"  ><b>Username:</b></label>&emsp;
+                </td>
+                <td>
+                    <input  type="text" placeholder="&emsp;Enter Username" name="Username" id="Username"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Password"><b>Password:</b></label>&emsp;
+                </td>
+                <td>
+                    <input type="Password" placeholder="&emsp;Enter Password" name="Password" id="Password"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Gender"><b>Gender:</b></label>&emsp;
+                </td>
+                <td>
+                    <input type="radio" name="Gender" id="Male" value="Male">
+                    <label for="Male"><b>Male</b></label>
+                    <input type="radio" name="Gender" id="Female" value="Female">
+                    <label for="Female"><b>Female</b></label>
+                    <input type="radio" name="Gender" id="Others" value="Others">
+                    <label for="Others"><b>Others</b></label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Program"><b>Program:</b></label>&emsp;
+                </td>
+                <td>
+                    <select name="Program" id="Program">
+                        <option value="--Select--" selected>--Select--</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BCA">BIT</option>
+                        <option value="BCA">BIM</option>
+                        <option value="BCA">BsCSIT</option>
+                    </select><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Photo"><b>Photo:</b></label>&emsp;
+                </td>
+                <td>
+                    <input type="file" name="Photo" id="Photo"><br>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" name="Submit" id="Submit">
+                    <input type="reset" name="Reset" id="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
