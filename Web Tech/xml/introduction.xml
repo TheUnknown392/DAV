@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person>
+    <student>
+        <name>TheUnknown</name>
+        <email>TheUnknown@abc.com</email>
+        <gender>Male</gender>
+    </student>
+    <teacher>
+        <name>Known</name>
+        <email>known@abc.com</email>
+        <gender>Female</gender>
+    </teacher>
+    <staff>
+        <name>The</name>
+        <email>The@abc.com</email>
+        <gender>Others</gender>
+    </staff>
+</person>

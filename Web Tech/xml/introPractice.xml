@@ -1,0 +1,13 @@
+<?xml version="1.0"?> 
+<!DOCTYPE school [
+<!ELEMENT  school (name,address,phone)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ATTLIST address type CDATA "Nepal">
+]>
+<school>
+    <name>jakjdf</name>
+    <address>hekki</address>
+    <phone>129009</phone>
+</school>
