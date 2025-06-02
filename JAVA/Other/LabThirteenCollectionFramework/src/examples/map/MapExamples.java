@@ -36,5 +36,16 @@ public class MapExamples {
             System.out.println("Key: " + student.getKey() + " Value: " + student.getValue());
         }
         
+        // updating data of map
+        // same method put() is used to update data of map but it checks the condition before updating: 
+        // conditionbefore updating - if the key already exist in the map then it updates the value 
+        // of existing key if not then it adds the data as new key-value pair.
+        // note: value can be duplicate but no keys are duplicate
+        System.out.println("Students before updating : "+ students);
+        // updating with existing key
+        students.put("address", "Pokhara");
+        // updating with new key
+        students.put("gender", "Male");
+        System.out.println("Students after updating : "+ students);
     }
 }
