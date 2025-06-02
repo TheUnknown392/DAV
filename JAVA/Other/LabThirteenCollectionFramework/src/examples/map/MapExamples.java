@@ -47,5 +47,11 @@ public class MapExamples {
         // updating with new key
         students.put("gender", "Male");
         System.out.println("Students after updating : "+ students);
+        
+        // removing item/data form map
+        System.out.println("Students before removing: " + students);
+        students.remove("gender");
+        System.out.println("Students after removing: " + students);
+
     }
 }
