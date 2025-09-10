@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <process.h>
+#include <stdlib.h>
 
 int stack[100],choice,n,top,x,i;
 
