@@ -1,0 +1,22 @@
+<html lang="en">
+  <head>
+    <script>
+      // run this function when the document is loaded
+      window.onload = () => {
+        // create a couple of elements in an otherwise empty HTML page
+
+        const titleTag = document.createElement("title");
+        const title = document.createTextNode("This is a title");
+        titleTag.appendChild(title);
+        document.head.appendChild(titleTag);
+
+        const heading = document.createElement("h1");
+        const headingText = document.createTextNode("Big Head!");
+        heading.appendChild(headingText);
+        document.body.appendChild(heading);
+      };
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
