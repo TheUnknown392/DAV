@@ -10,3 +10,4 @@ it may rarely contain my normal assignment.
 - [programiz](https://www.programiz.com)
 - [w3schools](https://www.w3schools.com)
 - [geeksforgeeks](https://geeksforgeeks.org)
+- [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
