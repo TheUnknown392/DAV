@@ -1,12 +1,22 @@
 namespace LabTwo{
     class Calculator{
         static void Main(){
-            int operation = 5;
+            float a,b;
+            int operation;
             do{
                 Console.Write("Enter First Number: ");
-                float a = Int32.Parse(Console.ReadLine() ?? "0");
+                try{
+                    a = Int32.Parse(Console.ReadLine());
+                }catch(Exception e){
+                    a = 0;
+                }
+                
                 Console.Write("Enter Second Number: ");
-                float b = Int32.Parse(Console.ReadLine() ?? "0");
+                try{
+                    b = Int32.Parse(Console.ReadLine());
+                }catch(Exception e){
+                    b = 0;
+                }
 
                 Console.WriteLine("The options are given below: ");
                 Console.WriteLine("    1. Add");
@@ -14,11 +24,17 @@ namespace LabTwo{
                 Console.WriteLine("    3. Multiply");
                 Console.WriteLine("    4. Divide");
                 Console.WriteLine("    5. Exit");
+
+                Console.Write("Please insert your choice: ");
+                try{
+                    operation = Int32.Parse(Console.ReadLine());
+                }catch(Exception e){
+                    operation = 0;
+                }
                 
-                operation = Int32.Parse(Console.ReadLine() ?? "0");
                 if(operation == 5) return;
-                float answer;
                 
+                float answer;
                 switch(operation){
                 case 1:
                     answer = Add(a,b);
@@ -44,7 +60,7 @@ namespace LabTwo{
                 Console.Write("Do you want to continue? y/n: ");
                 if(Console.ReadLine() == "n"){
                     operation = 5;
-                    Console.WriteLine("Running AI Queries to shutdown the Program...!");
+                    Console.WriteLine("Running very complex AI Queries to shutdown the Program...!");
                 }
                 Console.WriteLine();
             }while(operation != 5);
