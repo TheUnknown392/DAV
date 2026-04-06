@@ -2,6 +2,8 @@
 *#
 *~
 
+build
+
 # dependencies
 node_modules/
 
@@ -43,3 +45,5 @@ coverage/
 
 # misc
 *.local
+
+TAGS
